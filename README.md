@@ -100,3 +100,20 @@ Microsoft Defender for Endpoint Logs
 
 **Finding**:
 - **C2 Beacon Filename**: meterpreter.exe
+
+### 🔹 Flag 8 – PERSISTENCE - Named Pipe
+**Objective**: Identify the named pipe created by the C2 implant
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20151958.png?raw=true)
+
+**Result:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20152100.png?raw=true)
+
+**Finding**:
+- **Named Pipe Created**: \Device\NamedPipe\msf-pipe-5722
+
+### 🔹 Flag 9 – CREDENTIAL ACCESS - Decoded Account Creation
+**Objective**: What is the decoded Base64 command
+
+
