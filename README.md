@@ -166,6 +166,12 @@ Microsoft Defender for Endpoint Logs
 **Finding**:
 - **Command used to enumerate RDP sessions**: qwinsta.exe
 
+### 🔹 Flag 13 – DISCOVERY - Domain Trust Enumeration
+**Objective**: Identify the command used to enumerate domain trusts
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20170907.png?raw=true)
+
 
 
 
