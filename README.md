@@ -4,7 +4,7 @@
 
 Five days after the file server breach, threat actors returned with sophisticated tools and techniques. 
 The attacker pivoted from the compromised workstation to the CEO's administrative PC, deploying persistent backdoors and 
-exfiltrating sensitive business data including financial records and password databases.
+exfiltrating sensitive business data, including financial records and password databases.
 
 ## 💻 Compromised System
 
