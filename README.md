@@ -53,3 +53,17 @@ Microsoft Defender for Endpoint Logs
 **Finding**:
 - **Device Name**: azuki-adminpc
 
+### 🔹 Flag 4 – EXECUTION - Payload Hosting Service
+**Objective**: What file hosting service was used to stage malware
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20100039.png?raw=true)
+
+**Results:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20100103.png?raw=true)
+
+**Finding**:
+- **Hosting URL**: litter.catbox.moe
+
+
+
