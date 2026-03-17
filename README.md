@@ -116,4 +116,15 @@ Microsoft Defender for Endpoint Logs
 ### 🔹 Flag 9 – CREDENTIAL ACCESS - Decoded Account Creation
 **Objective**: What is the decoded Base64 command
 
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20153615.png?raw=true)
+
+**Result:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20153632.png?raw=true)
+
+**Decoded Message:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20154225.png?raw=true)
+
+
+
 
