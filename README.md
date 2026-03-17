@@ -125,6 +125,18 @@ Microsoft Defender for Endpoint Logs
 **Decoded Message:**
 ![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20154225.png?raw=true)
 
+**Finding**:
+- **Base64 Decoded Message**: net user yuki.tanaka2 B@ckd00r2024! /add
+
+### 🔹 Flag 10 – PERSISTENCE - Backdoor Account
+**Objective**: Identify the backdoor account name
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20155219.png?raw=true)
+
+**Result:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20155234.png?raw=true)
+
 
 
 
