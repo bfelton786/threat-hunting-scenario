@@ -152,6 +152,21 @@ Microsoft Defender for Endpoint Logs
 **Finding**:
 - **Decoded Base64 Command Acct. Escalation**: net localgroup Administrators yuki.tanaka2 /add
 
+### 🔹 Flag 12 – DISCOVERY - Session Enumeration
+**Objective**: What command was used to enumerate RDP sessions
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20165620.png?raw=true)
+
+**Result:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20165633.png?raw=true)
+
+**Reasoning**: qwinsta is a built-in Windows command-line tool used to list RDP sessions on a system
+
+**Finding**:
+- **Command used to enumerate RDP sessions**: qwinsta.exe
+
+
 
 
 
