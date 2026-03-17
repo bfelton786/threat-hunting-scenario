@@ -172,6 +172,27 @@ Microsoft Defender for Endpoint Logs
 **KQL Query**:
 ![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20170907.png?raw=true)
 
+**Result:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20170932.png?raw=true)
+
+**Reasoning**: nltest is a built-in Windows command-line tool used to query and troubleshoot Active Directory (AD) and domain trust relationships.
+
+**Finding:**
+- **Command used to enumerate domain trust connections**: "nltest.exe" /domain_trusts /all_trusts
+
+### 🔹 Flag 14 – DISCOVERY - Network Connection Enumeration
+**Objective**: What command was used to enumerate network connections
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20172352.png?raw=true)
+
+**Result:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20172508.png?raw=true)
+
+**Finding:**
+- **Command used to enumerate network connections**: "NETSTAT.EXE" -ano
+
+
 
 
 
