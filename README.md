@@ -20,3 +20,4 @@ Microsoft Defender for Endpoint Logs
 **Objective**: Identify the source IP address for lateral movement to the admin PC.
 
 **KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-16%20172626.png?raw=true)
