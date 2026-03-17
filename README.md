@@ -137,6 +137,25 @@ Microsoft Defender for Endpoint Logs
 **Result:**
 ![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20155234.png?raw=true)
 
+**Finding**:
+- **Account Name**: yuki.tanaka2
+
+### 🔹 Flag 11 – PERSISTENCE - Decoded Privilege Escalation Command
+**Objective**: What is the decoded Base64 command for privilege escalation
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20155219.png?raw=true)
+
+**Result:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20155234.png?raw=true)
+
+**Finding**:
+- **Decoded Base64 Command Acct. Escalation**: net localgroup Administrators yuki.tanaka2 /add
+
+
+
+
+
 
 
 
