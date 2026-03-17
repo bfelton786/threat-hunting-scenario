@@ -40,3 +40,16 @@ Microsoft Defender for Endpoint Logs
 
 **Finding**:
 - **Account**: yuki.tanaka
+
+### 🔹 Flag 3 – LATERAL MOVEMENT - Target Device
+**Objective**: What is the target device name
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20090347.png?raw=true)
+
+**Results:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20090416.png?raw=true)
+
+**Finding**:
+- **Device Name**: azuki-adminpc
+
