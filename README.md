@@ -37,3 +37,6 @@ Microsoft Defender for Endpoint Logs
 
 **Results:**
 ![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20085107.png?raw=true)
+
+**Finding**:
+- **Account**: yuki.tanaka
