@@ -28,3 +28,12 @@ Microsoft Defender for Endpoint Logs
 
 **Finding**:
 - Source IP: 10.1.0.204
+
+### 🔹 Flag 2 - LATERAL MOVEMENT - Compromised Credentials
+**Objective**: Identify the compromised account used for lateral movement
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20085034.png?raw=true)
+
+**Results:**
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20085107.png?raw=true)
