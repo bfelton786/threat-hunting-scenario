@@ -246,10 +246,15 @@ Microsoft Defender for Endpoint Logs
 **Objective**: Identify the total number of archives created
 
 **KQL Query**:
-![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20103611.png?raw=true)
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20122233.png?raw=true)
 
 **Result**:
-![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20103653.png?raw=true)
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20122140.png?raw=true)
+
+**Finding**:
+- **Total number of archives created**: 8
+
+### 🔹 Flag 20 – CREDENTIAL ACCESS - Credential Theft Tool Download
 
 
 
