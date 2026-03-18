@@ -215,6 +215,23 @@ Microsoft Defender for Endpoint Logs
 **Result**:
 ![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20213942.png?raw=true)
 
+**Finding**:
+- **Discovered Password File**: OLD-Passwords.lnk
+
+### 🔹 Flag 17 – COLLECTION - Data Staging Directory
+**Objective**: Identify the data staging directory
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20215923.png?raw=true)
+
+**Result**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20215943.png?raw=true)
+
+**Finding**:
+- **Staging Directory**: C:\ProgramData\Microsoft\Crypto\staging
+
+
+
 
 
 
