@@ -313,11 +313,20 @@ Microsoft Defender for Endpoint Logs
 **Result**:
 ![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20154752.png?raw=true)
 
+**Finding**:
+- **Exfiltration server IP address**: 45.112.123.227
 
+### 🔹 Flag 24 – CREDENTIAL ACCESS - Master Password Extraction
+**Objective**: What file contains the extracted master password
 
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20155738.png?raw=true)
 
+**Result**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20155753.png?raw=true)
 
-
+**Finding**:
+- **File containing the extracted master password**: KeePass-Master-Password.txt
 
 
 
