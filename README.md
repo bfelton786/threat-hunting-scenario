@@ -192,6 +192,32 @@ Microsoft Defender for Endpoint Logs
 **Finding:**
 - **Command used to enumerate network connections**: "NETSTAT.EXE" -ano
 
+### 🔹 Flag 15 – DISCOVERY - Password Database Search
+**Objective**: What command was used to search for password databases
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20212930.png?raw=true)
+
+**Result**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20213001.png?raw=true)
+
+**Reasoning**: A .kdbx file stores usernames, passwords, URLs, notes, and other secrets
+
+**Finding**
+- **Command used to search for password database**: where  /r C:\Users *.kdbx
+
+### 🔹 Flag 16 – DISCOVERY - Credential File
+**Objective**: Identify the discovered password file
+
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20213912.png?raw=true)
+
+**Result**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20213942.png?raw=true)
+
+
+
+
 
 
 
