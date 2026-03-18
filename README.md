@@ -301,10 +301,17 @@ Microsoft Defender for Endpoint Logs
 **Result**:
 ![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20145627.png?raw=true)
 
+**Finding**:
+- **Exfiltration service domain**: gofile.io
 
+### 🔹 Flag 24 – EXFILTRATION - Destination Server
+**Objective**:  Identify the exfiltration server IP address
 
+**KQL Query**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20154738.png?raw=true)
 
-
+**Result**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20154752.png?raw=true)
 
 
 
