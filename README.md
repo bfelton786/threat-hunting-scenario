@@ -328,10 +328,55 @@ Microsoft Defender for Endpoint Logs
 **Finding**:
 - **File containing the extracted master password**: KeePass-Master-Password.txt
 
+## 🧠 Analyst Reasoning Flow
 
+1 → 2: System compromised → Account compromised
 
+2 → 3: Account compromised → Target Device
 
+3 → 4: Target Device → Hosting service
 
+4 → 5: Hosting service → Malware download
+
+5 → 6: Malware download → Password extraction
+
+6 → 7: Password extraction → Command and Control beacon
+
+7 → 8: Command and Control beacon → Named Pipe creation
+
+8 → 9: Named Pipe creation → Decoded account creation
+
+9 → 10: Decoded account creation → Backdoor account
+
+10 → 11: Backdoor account → Backdoor account privilege escalation
+
+11 → 12: Backdoor account privilege escalation → RDP session enumeration
+
+12 → 13: RDP session enumeration → Domain trust enumeration
+
+13 → 14: Domain trust enumeration → Network trust enumeration
+
+14 → 15: Network trust enumeration → Password database search
+
+15 → 16: Password database search → Discovered passowrd file
+
+16 → 17: Discovered password file → Data staging directory
+
+17 → 18: Data staging directory → Data collection
+
+18 → 19: Data collection → Archive files created
+
+19 → 20: Archive files created → Credential theft tool downloaded
+
+20 → 21: Credential theft tool downloaded → Browser credential theft
+
+21 → 22: Browser credential theft → Data upload
+
+22 → 23: Data upload → Exfiltration to cloud storage service
+
+23 → 24: Exfiltration to cloud service storage → Destination server
+
+24 → 25: Destination server → Passwords info stored
 
 
 
