@@ -230,6 +230,19 @@ Microsoft Defender for Endpoint Logs
 **Finding**:
 - **Staging Directory**: C:\ProgramData\Microsoft\Crypto\staging
 
+### 🔹 Flag 18 – COLLECTION - Automated Data Collection Command
+**Obejective**: Identify the command used to copy banking documents
+
+**KQLQuery**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-17%20215923.png?raw=true)
+
+**Result**:
+![image alt](https://github.com/bfelton786/threat-hunting-scenario/blob/main/Screenshot%202026-03-18%20084240.png?raw=true)
+
+**Finding**:
+- **Command use to copy banking documents**: "Robocopy.exe" C:\Users\yuki.tanaka\Documents\Banking C:\ProgramData\Microsoft\Crypto\staging\Banking /E /R:1 /W:1 /NP
+
+### 🔹 Flag 19 – 
 
 
 
